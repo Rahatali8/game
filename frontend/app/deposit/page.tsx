@@ -7,10 +7,10 @@ import { api } from '@/lib/api'
 import { DEPOSIT_METHODS } from '@/lib/constants'
 
 const METHOD_DETAILS: Record<string, { account: string; name: string; instructions: string }> = {
-  USDT: { account: 'TXxxxxxxxxxxxxxxxxxxxxxxxx', name: 'CloudFire TRC20', instructions: 'Send USDT (TRC20) to the address above and enter your TXN hash.' },
+  USDT: { account: 'TXxxxxxxxxxxxxxxxxxxxxxxxx', name: 'CloudSky TRC20', instructions: 'Send USDT (TRC20) to the address above and enter your TXN hash.' },
   JazzCash: { account: '03001234567', name: 'Muhammad Ali', instructions: 'Send via JazzCash to the number above, then enter TXN ID.' },
   EasyPaisa: { account: '03001234567', name: 'Muhammad Ali', instructions: 'Send via EasyPaisa to the number above, then enter TXN ID.' },
-  'Bank Transfer': { account: 'PK36MEZN0001010123456789', name: 'CloudFire Ltd', instructions: 'Wire transfer to the IBAN above (HBL Bank). Attach proof screenshot.' },
+  'Bank Transfer': { account: 'PK36MEZN0001010123456789', name: 'CloudSky Ltd', instructions: 'Wire transfer to the IBAN above (HBL Bank). Attach proof screenshot.' },
 }
 
 export default function DepositPage() {

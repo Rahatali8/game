@@ -13,14 +13,14 @@ export default function AboutUsPage() {
               <Flame size={24} className="text-white" />
             </div>
             <div>
-              <h1 className="font-extrabold text-lg text-ink">CloudFire</h1>
+              <h1 className="font-extrabold text-lg text-ink">CloudSky</h1>
               <p className="text-xs text-ink-muted">Crystal Mining Platform</p>
             </div>
           </div>
 
           <div className="space-y-3 text-sm text-ink-soft leading-relaxed">
             <p>
-              CloudFire is a cutting-edge cloud mining investment platform that allows users to earn passive income through cryptocurrency mining without owning physical hardware.
+              CloudSky is a cutting-edge cloud mining investment platform that allows users to earn passive income through cryptocurrency mining without owning physical hardware.
             </p>
             <p>
               Our platform leverages state-of-the-art mining infrastructure to deliver consistent daily returns to our investors. We operate mining farms across multiple countries including Kazakhstan, Iceland, Japan, and China.

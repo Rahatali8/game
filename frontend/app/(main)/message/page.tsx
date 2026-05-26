@@ -58,7 +58,7 @@ export default function MessagePage() {
             <span className="text-lg">🔥</span>
           </div>
           <div>
-            <p className="font-bold text-sm">CloudFire Support</p>
+            <p className="font-bold text-sm">CloudSky Support</p>
             <div className="flex items-center gap-1">
               <Circle size={6} className="text-success fill-success" />
               <p className="text-white/70 text-xs">Online</p>

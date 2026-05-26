@@ -86,7 +86,7 @@ function RegisterForm() {
           style={{ paddingTop: 36, paddingBottom: 20 }}
         >
           <h1 className="text-[21px] font-black tracking-widest" style={{ color: '#8B1A1A' }}>
-            CLOUD FIRE
+            CLOUD SKY
           </h1>
         </div>
 

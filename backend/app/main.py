@@ -5,7 +5,7 @@ from app.core.config import settings
 from app.api.v1.router import api_router
 import os
 
-app = FastAPI(title="CloudFire API", version="1.0.0")
+app = FastAPI(title="CloudSky API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -26,7 +26,7 @@ app.include_router(api_router, prefix="/api/v1")
 
 @app.get("/")
 async def root():
-    return {"status": "ok", "service": "CloudFire API"}
+    return {"status": "ok", "service": "CloudSky API"}
 
 
 @app.get("/health")

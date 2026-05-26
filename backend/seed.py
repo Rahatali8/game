@@ -10,9 +10,9 @@ from app.models import miner, commission, transaction, message, login_history, n
 from app.utils.helpers import generate_referral_code
 
 PRODUCTS = [
-    {"name": "Cloud-Fire Micro BT", "price": Decimal("5"), "old_price": Decimal("8"), "daily_income": Decimal("0.40"), "total_income": Decimal("10.00"), "period_days": 25, "quantity_limit": 1, "country": "global", "offer_tag": "SPECIAL PRICE | BIG DISCOUNT", "sort_order": 1},
-    {"name": "Cloud-Fire Starter", "price": Decimal("20"), "old_price": Decimal("30"), "daily_income": Decimal("1.20"), "total_income": Decimal("36.00"), "period_days": 30, "quantity_limit": 2, "country": "global", "offer_tag": "POPULAR", "sort_order": 2},
-    {"name": "Cloud-Fire Pro", "price": Decimal("50"), "old_price": Decimal("70"), "daily_income": Decimal("3.50"), "total_income": Decimal("105.00"), "period_days": 30, "quantity_limit": 2, "country": "global", "offer_tag": "HOT DEAL", "sort_order": 3},
+    {"name": "Cloud-Sky Micro BT", "price": Decimal("5"), "old_price": Decimal("8"), "daily_income": Decimal("0.40"), "total_income": Decimal("10.00"), "period_days": 25, "quantity_limit": 1, "country": "global", "offer_tag": "SPECIAL PRICE | BIG DISCOUNT", "sort_order": 1},
+    {"name": "Cloud-Sky Starter", "price": Decimal("20"), "old_price": Decimal("30"), "daily_income": Decimal("1.20"), "total_income": Decimal("36.00"), "period_days": 30, "quantity_limit": 2, "country": "global", "offer_tag": "POPULAR", "sort_order": 2},
+    {"name": "Cloud-Sky Pro", "price": Decimal("50"), "old_price": Decimal("70"), "daily_income": Decimal("3.50"), "total_income": Decimal("105.00"), "period_days": 30, "quantity_limit": 2, "country": "global", "offer_tag": "HOT DEAL", "sort_order": 3},
     {"name": "Kazakhstan Miner", "price": Decimal("100"), "daily_income": Decimal("8.00"), "total_income": Decimal("240.00"), "period_days": 30, "quantity_limit": 3, "country": "Kazakhstan", "sort_order": 4},
     {"name": "Iceland Green Miner", "price": Decimal("200"), "daily_income": Decimal("18.00"), "total_income": Decimal("540.00"), "period_days": 30, "quantity_limit": 2, "country": "Iceland", "sort_order": 5},
     {"name": "Japan Premium Rig", "price": Decimal("300"), "daily_income": Decimal("28.00"), "total_income": Decimal("840.00"), "period_days": 30, "quantity_limit": 1, "country": "Japan", "sort_order": 6},

@@ -24,7 +24,7 @@ export default function MePage() {
 
   const referralLink = typeof window !== 'undefined'
     ? `${window.location.origin}/register?ref=${user?.referral_code}`
-    : `https://cloudfire.app/register?ref=${user?.referral_code}`
+    : `https://cloudsky.app/register?ref=${user?.referral_code}`
 
   const copyToClipboard = async (text: string) => {
     await navigator.clipboard.writeText(text)

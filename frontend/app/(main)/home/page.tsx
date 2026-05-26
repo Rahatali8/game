@@ -58,7 +58,7 @@ export default function HomePage() {
             </div>
             <div>
               <p className="text-white/60 text-[10px] font-medium">CRYSTAL MINING</p>
-              <p className="text-white text-sm font-extrabold leading-none">CLOUD FIRE</p>
+              <p className="text-white text-sm font-extrabold leading-none">CLOUD SKY</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -127,7 +127,7 @@ export default function HomePage() {
             transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
             className="flex gap-8 whitespace-nowrap"
           >
-            {['Ali from Pakistan bought Cloud-Fire Pro', 'Wang from China earned $50 commission',
+            {['Ali from Pakistan bought Cloud-Sky Pro', 'Wang from China earned $50 commission',
               'Ahmed from UAE bought Premium Miner', 'John from USA claimed $12.40'].map((text) => (
               <span key={text} className="text-amber-700 text-xs font-medium">{text}</span>
             ))}

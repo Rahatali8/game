@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CloudFire — Crystal Mining',
+  title: 'CloudSky — Crystal Mining',
   description: 'Cloud mining investment platform with referral commissions',
   manifest: '/manifest.json',
 }

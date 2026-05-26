@@ -11,7 +11,7 @@ export default function ConsultPage() {
           <div className="w-16 h-16 rounded-full bg-brand-100 flex items-center justify-center mx-auto mb-3">
             <span className="text-3xl">👨‍💼</span>
           </div>
-          <h2 className="font-extrabold text-lg text-ink">CloudFire Support</h2>
+          <h2 className="font-extrabold text-lg text-ink">CloudSky Support</h2>
           <p className="text-ink-soft text-sm mt-1">24/7 Customer Service</p>
 
           <div className="mt-6 space-y-3">

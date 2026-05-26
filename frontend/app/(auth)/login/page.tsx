@@ -85,7 +85,7 @@ export default function LoginPage() {
             </svg>
           </div>
           <h1 className="text-[21px] font-black tracking-widest mt-3" style={{ color: "#8B1A1A" }}>
-            CLOUD FIRE
+            CLOUD SKY
           </h1>
         </div>
 
@@ -95,7 +95,7 @@ export default function LoginPage() {
             Welcome Back
           </h2>
           <p className="text-center text-[13px] text-slate-400" style={{ marginTop: 8, marginBottom: 24 }}>
-            Sign in to your Cloud Fire account
+            Sign in to your Cloud Sky account
           </p>
 
           <hr style={{ borderColor: "#e5e7eb", marginBottom: 28 }} />
