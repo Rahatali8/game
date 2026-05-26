@@ -6,6 +6,7 @@ from app.core.security import hash_password
 from app.models.user import User
 from app.models.wallet import Wallet
 from app.models.product import Product
+from app.models import miner, commission, transaction, message, login_history, notification, announcement, task_reward, bonus, claim_history  # noqa: F401 - needed for SQLAlchemy relationship resolution
 from app.utils.helpers import generate_referral_code
 
 PRODUCTS = [
