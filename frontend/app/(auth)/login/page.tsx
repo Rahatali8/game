@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Eye, EyeOff, CheckCircle2, Phone, Lock } from "lucide-react";
+import { Eye, EyeOff, CheckCircle2, Phone, Lock, Cloud } from "lucide-react";
 import { COUNTRIES } from "@/lib/countries";
 import { api } from "@/lib/api";
 import { useAuthStore } from "@/store/authStore";
@@ -45,8 +45,8 @@ export default function LoginPage() {
 
   const inputBase = {
     height: 52,
-    background: "#eef2ff",
-    border: "none",
+    background: "#eff6ff",
+    border: "1.5px solid #bfdbfe",
     borderRadius: 16,
     fontSize: 14,
     color: "#1e293b",
@@ -56,53 +56,41 @@ export default function LoginPage() {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 py-6"
-      style={{ background: "#eef0f5" }}
+      style={{ background: "#f8fafc" }}
     >
       <div
         className="w-full max-w-[480px] bg-white rounded-[28px]"
-        style={{ boxShadow: "0 16px 56px rgba(0,0,0,0.13)" }}
+        style={{ boxShadow: "0 20px 60px rgba(37,99,235,0.25)" }}
       >
         {/* LOGO */}
-        <div className="flex flex-col items-center" style={{ padding: "40px 40px 20px" }}>
-          <div style={{ filter: "drop-shadow(0 6px 18px rgba(239,83,80,0.38))" }}>
-            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
-              <ellipse cx="50" cy="68" rx="36" ry="20" fill="#ff7043" opacity="0.12" />
-              <path d="M50 8 C35 25 20 38 22 58 C24 74 36 86 50 88 C64 86 76 74 78 58 C80 38 65 25 50 8Z" fill="url(#fo)" />
-              <path d="M50 28 C42 40 36 50 38 62 C40 72 44 78 50 80 C56 78 60 72 62 62 C64 50 58 40 50 28Z" fill="url(#fi)" />
-              <path d="M50 48 C46 54 44 60 46 66 C47 70 48.5 72 50 72 C51.5 72 53 70 54 66 C56 60 54 54 50 48Z" fill="#fff3e0" opacity="0.9" />
-              <defs>
-                <linearGradient id="fo" x1="50" y1="8" x2="50" y2="88" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stopColor="#ffd54f" />
-                  <stop offset="40%" stopColor="#ff7043" />
-                  <stop offset="100%" stopColor="#c62828" />
-                </linearGradient>
-                <linearGradient id="fi" x1="50" y1="28" x2="50" y2="80" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stopColor="#ffecb3" />
-                  <stop offset="50%" stopColor="#ff8a65" />
-                  <stop offset="100%" stopColor="#e53935" />
-                </linearGradient>
-              </defs>
-            </svg>
+        <div
+          className="flex flex-col items-center rounded-t-[28px]"
+          style={{ padding: "40px 40px 24px", background: "linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)" }}
+        >
+          <div className="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mb-3"
+            style={{ boxShadow: "0 8px 24px rgba(0,0,0,0.2)" }}>
+            <Cloud size={40} className="text-white" />
           </div>
-          <h1 className="text-[21px] font-black tracking-widest mt-3" style={{ color: "#8B1A1A" }}>
+          <h1 className="text-[22px] font-black tracking-widest text-white">
             CLOUD SKY
           </h1>
+          <p className="text-blue-200 text-[12px] font-medium mt-1">CRYSTAL MINING</p>
         </div>
 
         {/* FORM */}
-        <div style={{ padding: "0 40px 48px" }}>
-          <h2 className="text-[30px] font-extrabold text-center" style={{ color: "#e53935" }}>
+        <div style={{ padding: "32px 40px 48px" }}>
+          <h2 className="text-[28px] font-extrabold text-center text-blue-900">
             Welcome Back
           </h2>
-          <p className="text-center text-[13px] text-slate-400" style={{ marginTop: 8, marginBottom: 24 }}>
+          <p className="text-center text-[13px] text-slate-400" style={{ marginTop: 6, marginBottom: 24 }}>
             Sign in to your Cloud Sky account
           </p>
 
-          <hr style={{ borderColor: "#e5e7eb", marginBottom: 28 }} />
+          <hr style={{ borderColor: "#e2e8f0", marginBottom: 24 }} />
 
           {error && (
             <div className="px-4 py-3 rounded-2xl text-[13px] font-medium text-center"
-              style={{ background: "#fff5f5", border: "1.5px solid #fca5a5", color: "#dc2626", marginBottom: 20 }}>
+              style={{ background: "#fef2f2", border: "1.5px solid #fca5a5", color: "#dc2626", marginBottom: 20 }}>
               {error}
             </div>
           )}
@@ -110,10 +98,10 @@ export default function LoginPage() {
           <form onSubmit={handleSubmit}>
 
             {/* Mobile */}
-            <div style={{ marginBottom: 24 }}>
+            <div style={{ marginBottom: 20 }}>
               <label className="flex items-center gap-2 text-[13px] font-bold text-slate-700"
-                style={{ marginBottom: 10 }}>
-                <Phone size={14} className="text-red-500" />
+                style={{ marginBottom: 8 }}>
+                <Phone size={14} className="text-blue-600" />
                 Mobile Number
               </label>
               <div className="flex gap-2">
@@ -124,8 +112,8 @@ export default function LoginPage() {
                   style={{
                     width: 148,
                     height: 52,
-                    background: "#eef2ff",
-                    border: "none",
+                    background: "#eff6ff",
+                    border: "1.5px solid #bfdbfe",
                     borderRadius: 16,
                     paddingLeft: 16,
                     paddingRight: 8,
@@ -138,7 +126,7 @@ export default function LoginPage() {
                   ))}
                 </select>
                 <div className="relative flex-1">
-                  <Phone size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+                  <Phone size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-400 pointer-events-none" />
                   <input
                     type="tel"
                     inputMode="numeric"
@@ -155,12 +143,12 @@ export default function LoginPage() {
             {/* Password */}
             <div style={{ marginBottom: 28 }}>
               <label className="flex items-center gap-2 text-[13px] font-bold text-slate-700"
-                style={{ marginBottom: 10 }}>
-                <Lock size={14} className="text-red-500" />
+                style={{ marginBottom: 8 }}>
+                <Lock size={14} className="text-blue-600" />
                 Password
               </label>
               <div className="relative">
-                <Lock size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+                <Lock size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-400 pointer-events-none" />
                 <input
                   type={showPassword ? "text" : "password"}
                   value={password}
@@ -172,7 +160,7 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-red-500 transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-blue-600 transition-colors"
                 >
                   {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
                 </button>
@@ -187,10 +175,10 @@ export default function LoginPage() {
               style={{
                 height: 56,
                 background: loading
-                  ? "#ef9a9a"
-                  : "linear-gradient(135deg, #c62828 0%, #e53935 50%, #ef5350 100%)",
+                  ? "#93c5fd"
+                  : "linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%)",
                 borderRadius: 16,
-                boxShadow: "0 8px 22px rgba(229,57,53,0.4)",
+                boxShadow: "0 8px 24px rgba(37,99,235,0.4)",
               }}
             >
               {loading ? (
@@ -201,7 +189,7 @@ export default function LoginPage() {
 
           <p className="text-center text-[13px] text-slate-400" style={{ marginTop: 24 }}>
             Don&apos;t have an account?{" "}
-            <Link href="/register" className="font-bold hover:underline" style={{ color: "#e53935" }}>
+            <Link href="/register" className="font-bold text-blue-600 hover:underline">
               Create account
             </Link>
           </p>
@@ -212,15 +200,15 @@ export default function LoginPage() {
       {success && (
         <div className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-black/50 backdrop-blur-sm">
           <div className="bg-white rounded-3xl p-8 max-w-sm w-full text-center shadow-2xl">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-4">
-              <CheckCircle2 className="w-12 h-12 text-green-600" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mb-4">
+              <CheckCircle2 className="w-12 h-12 text-blue-600" />
             </div>
             <h3 className="text-2xl font-extrabold text-slate-900 mb-2">Welcome {userName}!</h3>
             <p className="text-sm text-slate-400 mb-6">Redirecting to your dashboard...</p>
             <button
               onClick={() => router.push("/home")}
               className="w-full py-4 text-white font-bold rounded-full"
-              style={{ background: "linear-gradient(135deg, #c62828, #ef5350)" }}
+              style={{ background: "linear-gradient(135deg, #1e3a8a, #3b82f6)" }}
             >
               Go to Dashboard &#8594;
             </button>
