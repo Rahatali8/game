@@ -5,6 +5,13 @@ from app.core.config import settings
 from app.api.v1.router import api_router
 import os
 
+# Import all models so SQLAlchemy resolves relationships on startup
+from app.models import (  # noqa: F401
+    user, wallet, product, miner, claim_history,
+    commission, transaction, message, login_history,
+    notification, announcement, task_reward, bonus,
+)
+
 app = FastAPI(title="CloudSky API", version="1.0.0")
 
 app.add_middleware(
