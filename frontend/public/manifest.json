@@ -1,0 +1,16 @@
+{
+  "name": "Cloud Fire - Crystal Mining",
+  "short_name": "Cloud Fire",
+  "description": "Mine crypto and earn rewards with Cloud Fire",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f2f5",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
